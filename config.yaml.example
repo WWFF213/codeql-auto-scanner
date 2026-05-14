@@ -1,0 +1,16 @@
+deepseek:
+  api_key: ""  # 填入你的 DeepSeek API key，或留空从环境变量 DEEPSEEK_API_KEY 读取
+  base_url: "https://api.deepseek.com"
+  model: "deepseek-chat"
+  max_tokens: 4096
+  temperature: 0.1
+
+codeql:
+  default_source_path: ""
+  default_db_path: "./codeql_db"
+  language: "java"
+
+output:
+  dir: "./output"
+  save_query: true
+  save_results: true
