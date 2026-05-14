@@ -8,7 +8,7 @@
 - 查询执行失败时自动把错误反馈给 LLM 修复重试
 - 支持 Java / Python / JavaScript / C-C++ / Go / C# 等语言
 - SARIF 结果解析，命令行表格化展示告警
-- 内置 5 个测试样例（SQL 注入、命令注入、硬编码密钥、路径遍历、DOM XSS）
+- 内置 5 个测试样例（SQL 注入、命令注入、Use-After-Free、Double Free、Memory Leak）
 
 ## 依赖
 
@@ -63,10 +63,10 @@ python main.py
 | 目录 | 漏洞类型 | 语言 |
 |---|---|---|
 | `java-sqli/` | SQL 注入 | Java |
-| `java-pathtraversal/` | 路径遍历 | Java |
 | `py-cmdi/` | 命令注入 | Python |
-| `py-secret/` | 硬编码密钥 | Python |
-| `js-xss/` | DOM XSS | JavaScript |
+| `c-uaf/` | Use-After-Free | C |
+| `c-double-free/` | Double Free | C |
+| `c-memory-leak/` | Memory Leak / 资源泄漏 | C |
 
 每个样例都同时包含漏洞代码和安全对照组，可用于验证查询精度。
 
