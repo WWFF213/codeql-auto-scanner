@@ -83,7 +83,3 @@ zidonghua/
 │   └── prompt_builder.py    # 提示词构建
 └── testcases/               # 测试样例
 ```
-
-## License
-
-MIT
